@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Document</title>
+  <meta http-equiv="refresh" content="15; url=page1.html">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+
+      background-image: url(bg3.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      display: block;
+    }
+
+    body::before {
+      position: absolute;
+      width: min(1400px, 200vw);
+      top: 10%;
+      left: 50%;
+      height: 90%;
+      transform: translateX(-50%);
+      content: '';
+      background-image: url(images/bg.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: ;
+      pointer-events: none;
+    }
+
+    .circle-text {
+      font-family: Arial, sans-serif;
+      display: flex;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-size: 4em;
+      color: #ffffff;
+      text-shadow: 2px 2px 0 #070502, 4px 4px 0 #e67e22, 6px 6px 0 #d300be;
+  </style>
+  <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+  <div class="banner">
+    <div class="slider" style="--quantity: 10">
+      <div class="item" style="--position: 1"><img src="1.jpg" alt=""></div>
+      <div class="item" style="--position: 2"><img src="2.jpg" alt=""></div>
+      <div class="item" style="--position: 3"><img src="3.jpg" alt=""></div>
+      <div class="item" style="--position: 4"><img src="4.jpg" alt=""></div>
+      <div class="item" style="--position: 5"><img src="5.jpg" alt=""></div>
+      <div class="item" style="--position: 6"><img src="6.jpg" alt=""></div>
+      <div class="item" style="--position: 7"><img src="7.jpg" alt=""></div>
+      <div class="item" style="--position: 8"><img src="8.jpg" alt=""></div>
+      <div class="item" style="--position: 9"><img src="9.jpg" alt=""></div>
+      <div class="item" style="--position: 10"><img src="10.jpg" alt=""></div>
+    </div>
+    <div class="circle-text">
+      <p>Happy Birthday<br>my girl🤍</p>
+    </div>
+
+
+</body>
+
+</html>
